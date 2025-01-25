@@ -1,0 +1,48 @@
+.container{
+    width: 80vw;
+    height: 80vh;
+    background-color: aqua;
+}
+
+.box{
+    width: 35px;
+    height: 45px;
+    animation-name: myanimation;
+    background-color: brown;
+    /* animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s; */
+    /* animation-iteration-count: 2;  */  /* we can give it in infinite  */
+    
+         /* animation-direction: reverse;  */      /* we can use alternate mens one time forward and one time backward         */
+ /* animation-fill-mode: none; */     /*animation fins then after that how our code will look /* we can also use forward */
+ /* animation-play-state: running; */
+
+   animation: myanimation 1s infinite, animation2 1s infinote forwards;        /* short hand property */
+
+
+}
+@keyframes myanimation{
+    from{
+        background-color: blue;
+        transform: translate(1000px);
+
+    }
+    to{
+        background-color: green
+
+    }
+}
+@keyframes animation2{
+    0%{
+        rotate: 80deg;
+
+    }
+    100%{
+
+    }
+
+
+
+
+}

@@ -1,0 +1,30 @@
+.box{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    animation: animte 5s ease-in-out 2s ;  /* 1st:name , durantion; name ;last one is delay  */
+   
+}
+
+@keyframes animte{
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+    25%{
+        transform: scale(1.5) rotate(90deg);
+    }
+    50%{
+        transform: scale(1) rotate(180deg);
+    }
+    75%{
+        transform: scale(1.5) rotate(200deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
